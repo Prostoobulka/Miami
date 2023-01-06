@@ -806,15 +806,15 @@ body::-webkit-scrollbar {
   background: url("../img/hero-main/bg-hero.jpg") center center/cover no-repeat; }
 
 .hero-main {
-  min-height: 100vh;
-  -webkit-transition: height 0.8s ease 0s;
-  -o-transition: height 0.8s ease 0s;
-  transition: height 0.8s ease 0s;
-  height: var(--app-height);
+  height: 100vh;
+  -webkit-transition: min-height 0.8s ease 0s;
+  -o-transition: min-height 0.8s ease 0s;
+  transition: min-height 0.8s ease 0s;
+  min-height: var(--app-height);
 }
 
 .hero-main__container {
-  min-height: 100vh;
+  min-height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
