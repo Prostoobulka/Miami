@@ -327,6 +327,12 @@
     function showBtn() {
         if (document.documentElement.scrollTop > 200 || document.body.scrollTop > 200) btnTop.classList.add("_scroll-top"); else btnTop.classList.remove("_scroll-top");
     }
+    const appHeight = () => {
+        const doc = document.documentElement;
+        doc.style.setProperty("--app-height", `${window.innerHeight}px`);
+    };
+    window.addEventListener("resize", appHeight);
+    appHeight();
     window["FLS"] = false;
     isWebp();
     addTouchClass();

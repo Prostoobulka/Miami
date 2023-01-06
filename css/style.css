@@ -798,11 +798,19 @@ body::-webkit-scrollbar {
           transform: translate(-50%, 0%);
 }
 
+:root {
+  --app-height: 100%;
+}
+
 .no-webp .hero-main{
   background: url("../img/hero-main/bg-hero.jpg") center center/cover no-repeat; }
 
 .hero-main {
   min-height: 100vh;
+  -webkit-transition: height 0.8s ease 0s;
+  -o-transition: height 0.8s ease 0s;
+  transition: height 0.8s ease 0s;
+  height: var(--app-height);
 }
 
 .hero-main__container {
