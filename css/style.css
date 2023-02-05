@@ -507,6 +507,7 @@ body::-webkit-scrollbar {
 }
 
 .header__tel-item span {
+  pointer-events: none;
   -webkit-transition: all 1s ease, opacity 0.5s ease;
   -o-transition: all 1s ease, opacity 0.5s ease;
   transition: all 1s ease, opacity 0.5s ease;
@@ -806,11 +807,10 @@ body::-webkit-scrollbar {
   background: url("../img/hero-main/bg-hero.jpg") center center/cover no-repeat; }
 
 .hero-main {
-  height: 100vh;
-  -webkit-transition: min-height 0.8s ease 0s;
-  -o-transition: min-height 0.8s ease 0s;
-  transition: min-height 0.8s ease 0s;
-  min-height: var(--app-height);
+  -webkit-transition: height 0.8s ease 0s;
+  -o-transition: height 0.8s ease 0s;
+  transition: height 0.8s ease 0s;
+  height: var(--app-height);
 }
 
 .hero-main__container {
